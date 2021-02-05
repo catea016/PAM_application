@@ -12,4 +12,6 @@ For this laboratory work we had to:
 2. For the second task I created 2 activities ```MainActivity.kt``` and ```SecondActivity.kt```
 both with their own design. 
 
-In the first screen 
+In the first screen I added a text field for the data that will be send and a button.
+ ![](../app/images/screen1.png)
+ 
