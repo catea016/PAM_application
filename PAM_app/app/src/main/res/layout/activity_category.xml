@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CAE1EC"
+    tools:context=".CategoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/backImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                app:srcCompat="@drawable/back_icon" />
+
+            <ImageView
+                android:id="@+id/searchImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="15dp"
+                app:srcCompat="@drawable/search_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/categories"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:fontFamily="@font/acme"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:text="CATEGORIES"
+            android:textAlignment="center"
+            android:textColor="#040000"
+            android:textSize="36dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/button_background">
+
+            <TextView
+                android:id="@+id/foodAndDrinks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Food and Drinks"
+                android:textSize="30dp"
+                android:fontFamily="@font/acme"
+                android:padding="25dp"/>
+
+            <Button
+                android:id="@+id/expandAllButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginLeft="40dp"
+                android:background="#00000000"
+                android:padding="20dp"
+                android:text="expand all"
+                app:backgroundTint="#00FFFFFF"
+                android:textSize="20dp"
+                android:fontFamily="@font/acme"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/food_icon"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/button_background">
+
+            <TextView
+                android:id="@+id/cosmetics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="37dp"
+                android:text="Cosmetics"
+                android:textSize="30dp"
+                android:fontFamily="@font/acme"
+                android:padding="25dp"/>
+
+            <Button
+                android:id="@+id/expandAllButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginRight="37dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="40dp"
+                android:background="#00000000"
+                android:padding="20dp"
+                android:text="expand all"
+                app:backgroundTint="#00FFFFFF"
+                android:textSize="20dp"
+                android:fontFamily="@font/acme"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/cosmetics_icon"
+                android:layout_alignParentLeft="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:background="@drawable/button_background">
+
+            <TextView
+                android:id="@+id/clothesAndShoes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clothes and Shoes"
+                android:textSize="30dp"
+                android:fontFamily="@font/acme"
+                android:padding="25dp"/>
+
+            <Button
+                android:id="@+id/expandAllButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="-1dp"
+                android:layout_marginLeft="40dp"
+                android:background="#00000000"
+                android:padding="20dp"
+                android:text="expand all"
+                app:backgroundTint="#00FFFFFF"
+                android:textSize="20dp"
+                android:fontFamily="@font/acme"/>
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/cloths_icon"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</ScrollView>
