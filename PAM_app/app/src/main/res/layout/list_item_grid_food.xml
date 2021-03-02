@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="150dp">
+    android:layout_height="150dp"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/imageFood"
@@ -24,7 +25,7 @@
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@id/imageFood"
         app:layout_constraintTop_toBottomOf="@id/imageFood"
-        tools:text="" />
+        tools:text="Carbonara, 300g" />
 
     <TextView
         android:id="@+id/textPrice"
@@ -35,7 +36,7 @@
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@id/textFoodName"
         app:layout_constraintTop_toBottomOf="@id/textFoodName"
-        tools:text="" />
+        tools:text="80 MDL" />
 
 
 </LinearLayout>

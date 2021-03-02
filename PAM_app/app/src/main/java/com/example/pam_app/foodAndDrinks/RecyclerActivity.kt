@@ -26,6 +26,8 @@ class RecyclerActivity : AppCompatActivity() {
     private fun prepareData() {
         var food = FoodModel("@drawable/carbonara", "Carbonara", "80 MDL")
         foodList.add(food)
+        food = FoodModel("@drawable/carbonara", "Carbonara", "80 MDL")
+        foodList.add(food)
         foodAdapter.notifyDataSetChanged()
     }
 }
