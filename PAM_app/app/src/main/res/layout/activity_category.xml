@@ -56,29 +56,30 @@
                 android:id="@+id/foodAndDrinks"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Food and Drinks"
-                android:textSize="30dp"
                 android:fontFamily="@font/acme"
-                android:padding="25dp"/>
+                android:padding="25dp"
+                android:text="Food and Drinks"
+                android:textSize="30dp" />
 
             <Button
                 android:id="@+id/expandAllButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginBottom="-1dp"
                 android:layout_marginLeft="40dp"
+                android:layout_marginBottom="-1dp"
                 android:background="#00000000"
+                android:fontFamily="@font/acme"
                 android:padding="20dp"
                 android:text="expand all"
-                app:backgroundTint="#00FFFFFF"
                 android:textSize="20dp"
-                android:fontFamily="@font/acme"/>
+                app:backgroundTint="#00FFFFFF" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/food_icon"
-                android:layout_alignParentRight="true"/>
+                android:layout_alignParentRight="true"
+                android:src="@drawable/food_icon" />
 
         </RelativeLayout>
 
