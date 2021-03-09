@@ -1,4 +1,4 @@
-## Laboratory work nr1
+## Laboratory work Nr. 2
 # Laboratory Task:
 For this laboratory work we had to:
 * Pick a theme for your app. You will not be allowed to change theme after this lab.
