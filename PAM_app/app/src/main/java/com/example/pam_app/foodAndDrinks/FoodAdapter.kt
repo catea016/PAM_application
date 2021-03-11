@@ -24,11 +24,11 @@ internal class FoodAdapter(private var foodList: List<FoodModel>) : RecyclerView
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val food = foodList[position]
-        food.getImage()?.let {
+        food.setGetImage?.let {
             holder.image.setImageResource(it)
         }
-        holder.name.text = food.getName()
-        holder.price.text = food.getPrice()
+        holder.name.text = food.setGetName
+        holder.price.text = food.setGetPrice
     }
 
     override fun getItemCount(): Int {
