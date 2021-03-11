@@ -6,15 +6,22 @@ import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pam_app.R
+import com.example.pam_app.databinding.ActivityRecyclerBinding
 
 
 class RecyclerActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityRecyclerBinding
+
     private val foodList = ArrayList<FoodModel>()
     private lateinit var foodAdapter: FoodAdapter
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_recycler)
-        val recyclerView: RecyclerView = findViewById(R.id.recyclerView)
+        binding = ActivityRecyclerBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        val recyclerView: RecyclerView = binding.recyclerView
         foodAdapter = FoodAdapter(foodList)
         val layoutManager = GridLayoutManager(applicationContext, 2);
         recyclerView.layoutManager = layoutManager

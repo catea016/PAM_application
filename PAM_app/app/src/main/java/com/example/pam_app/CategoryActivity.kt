@@ -1,27 +1,28 @@
 package com.example.pam_app
 
-import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
-import android.widget.Button
-import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
+import com.example.pam_app.databinding.ActivityCategoryBinding
 
 class CategoryActivity : AppCompatActivity() {
 
+    private lateinit var binding: ActivityCategoryBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_category)
+        binding = ActivityCategoryBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
-        val back_button = findViewById(R.id.backImageView) as ImageView
-        back_button.setOnClickListener{
+
+       // val back_button = binding.backImageView as ImageView
+        binding.backImageView.setOnClickListener{
             val intent = Intent(this@CategoryActivity, WelcomeActivity::class.java)
             startActivity(intent)
         }
 
-        val expand_all_1_button = findViewById(R.id.expandAllButton) as Button
-        expand_all_1_button.setOnClickListener {
+        binding.expandAllButton.setOnClickListener {
             val intent1 = Intent(this@CategoryActivity, com.example.pam_app.foodAndDrinks.RecyclerActivity::class.java)
             startActivity(intent1)
         }
