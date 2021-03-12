@@ -17,5 +17,4 @@ class FoodModel(image: Int?, name: String?, price: String?) {
         set(value) {
             field = value.toString()
         }
-
 }
