@@ -15,19 +15,18 @@ class CategoryActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-
-       // val back_button = binding.backImageView as ImageView
-        binding.backImageView.setOnClickListener{
+        binding.backImageView.setOnClickListener {
             val intent = Intent(this@CategoryActivity, WelcomeActivity::class.java)
             startActivity(intent)
         }
 
         binding.expandAllButton.setOnClickListener {
-            val intent1 = Intent(this@CategoryActivity, com.example.pam_app.foodAndDrinks.RecyclerActivity::class.java)
+            val intent1 = Intent(
+                this@CategoryActivity,
+                com.example.pam_app.foodAndDrinks.RecyclerActivity::class.java
+            )
             startActivity(intent1)
         }
-
-
     }
 }
 
