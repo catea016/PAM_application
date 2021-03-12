@@ -1,46 +1,24 @@
-## Laboratory work nr1
+## Laboratory work Nr. 2
 # Laboratory Task:
 For this laboratory work we had to:
-* Init mobile application on selected platform
-* Create at least 2 screens which transfer data from one screen to another
-* Perform some data changes to data you received in screen No. 2 and pass it back to screen No. 1
-* Add at least one active element on the screen, ex. button, text field and handle its action. Some not trivial action handling are welcome :)
-* Change Icon of the app to custom one
+* Pick a theme for your app. You will not be allowed to change theme after this lab.
+* App should be complex one, from UI and business logic perspective. Think about implement some app which you desire to create for personal use or create clone of some interesting or popular app (twitter, instagram, gmail, linkedIn or others popular app from your smartphone)
+* Your are allowed to use any public API of any service. Twitter, instagram, facebook and other big platforms has various public API which are very interesting. Connecting to API and fetching real data does not enter in scope of LAB 2.
+* Some ingenious app ideas will be rated with higher marks. Be creative and try to create something new and not just clone existing ideas.
+* Implement basic UI and layout of your app. Implement design for at least 3 functional screens, this means to create such screen as main home screen, feed or another screen which relates to app business logic.
+* Don't focus on sign in / sign up screen (there is no so much fun in creating that screens), but you are encouraged to add them too.
+* At least 1 screen should present collection of data, in other words list of elements.
+* List should contain at least 30 elements. For this lab you could hardcode data which you will use in order to populate list, or it could be a dummy data, but it should be human readable.
+* Try to implement list with multiple columns at least 2, also you could try to implement list with multiple directions of scrolling, like list where elements could scroll vertical as usually, and row could scroll horizontally (like Netflix on home feed)
+  On Android you should use "RecyclerView", on iOS you should use "UICollectionView"
+* Create your UI and layout to support portrait and landscape orientations and different screen sizes starting from phone with small screens (4 inch) to tablets with screen size 12 inch. Supporting of different screen sizes and orientation is mandatory.
+* You should mandatory use version control (git) for your labs. Create public repo on github and push all your code to it. Try to work on dedicated branches for specific functionalities, use Pull Requests and ask your group colleagues for a code review.
 
 # What I did:
-1. So, I initiated a new android application using kotlin programming language.
-2. For the second task I created 2 activities ```MainActivity.kt``` and ```SecondActivity.kt```
-both with their own design. 
+1. So, I selected a theme for my app, that is an delivery app for everything
+2. I created 3 screens, Welcome screen, category screen and list of items for first category screen
+3. For the list of items I used RecyclerView, but the list is hardcoded
 
-In the first screen I added a text field for the data that will be send and a button.
- 
-![](../app/images/screen1.png)
- 
- I perform the action of sending data using an Intent object when the sent button is pressed
- ```kotlin
-sendButton.setOnClickListener {
-            val intent = Intent(this@MainActivity, SecondActivity::class.java)
-            val name = nameEditText.text.toString()
-            intent.putExtra("NAME", name)
-            startActivityForResult(intent,1)
-        }
-```
-![](../app/images/send_data.png)
+I obtained the following result:
 
-After sending data, I need to get it in the second activity using intent functions and mainly 
-```intent.getStringExtra()``` 
- and after getting the data I display it to the second screen.
- 
- ![](../app/images/screen2.png)
- 
- where appear Welcome message and the credentials introduced by the user. Also I need to perform 
- some modifications and send data back. So, I modified the string and using SEND BACK button 
- I send data back to the first screen. 
- 
-  ![](../app/images/edited_data.png)
-  
- where we can see the new message displayed "Your name is $name"
- 
- 3. Another task was to change the icon of the app we can se my icon below:
- 
- ![](../app/images/logo.png)
+![alt text](../app/images/gif.gif)
