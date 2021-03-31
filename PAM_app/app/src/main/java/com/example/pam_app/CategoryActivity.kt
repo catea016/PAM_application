@@ -27,6 +27,14 @@ class CategoryActivity : AppCompatActivity() {
             )
             startActivity(intent1)
         }
+
+        binding.expandAllButton2.setOnClickListener {
+            val intent2 = Intent(
+                this@CategoryActivity,
+                com.example.pam_app.cosmetics.CosmeticsActivity::class.java
+            )
+            startActivity(intent2)
+        }
     }
 }
 
