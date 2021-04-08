@@ -15,4 +15,8 @@ class Repository() {
     suspend fun putItem(cosmetics: Cosmetics): Response<Cosmetics> {
         return RetrofitBuilder.api.putItem(cosmetics)
     }
+
+    suspend fun postSmth(cosmetics: Cosmetics): Response<Cosmetics> {
+        return RetrofitBuilder.api.putItem(cosmetics)
+    }
 }

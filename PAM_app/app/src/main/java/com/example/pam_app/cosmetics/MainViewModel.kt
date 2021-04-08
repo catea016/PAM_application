@@ -18,6 +18,13 @@ class MainViewModel(private val repository: Repository) : ViewModel() {
         }
     }
 
+    fun postSmth(cosmetics: Cosmetics) {
+        viewModelScope.launch {
+            val response = repository.postSmth(cosmetics)
+            myResponse.value = response
+        }
+    }
+
     fun getBlush() {
         viewModelScope.launch {
             val response = repository.getBlush()

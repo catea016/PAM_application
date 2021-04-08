@@ -14,4 +14,7 @@ interface ApiInterface {
 
     @POST("/api/v1/products.json")
     suspend fun putItem(@Body cosmetics: Cosmetics): Response<Cosmetics>
+
+    @POST("/api/v1/products.json?product_type=eyeshadow")
+    suspend fun postSmth(@Body cosmetics: Cosmetics): Response<Cosmetics>
 }
