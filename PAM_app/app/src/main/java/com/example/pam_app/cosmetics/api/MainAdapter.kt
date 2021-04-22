@@ -1,4 +1,4 @@
-package com.example.pam_app.cosmetics
+package com.example.pam_app.cosmetics.api
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -29,6 +29,7 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.MyViewHolder>() {
             }
         }
     }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val binding =

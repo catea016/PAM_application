@@ -9,7 +9,6 @@ import androidx.core.view.GravityCompat
 import com.example.pam_app.databinding.ActivityCategoryBinding
 
 
-
 class CategoryActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityCategoryBinding

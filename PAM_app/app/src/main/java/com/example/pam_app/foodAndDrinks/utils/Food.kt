@@ -1,6 +1,6 @@
-package com.example.pam_app.foodAndDrinks
+package com.example.pam_app.foodAndDrinks.utils
 
-class FoodModel(image: Int?, name: String?, price: String?) {
+class Food(image: Int?, name: String?, price: String?) {
 
     var image: Int? = image
         get() = field

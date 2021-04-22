@@ -1,4 +1,4 @@
-package com.example.pam_app.cosmetics
+package com.example.pam_app.cosmetics.api
 
 data class Cosmetics(
     var image_link: String,

@@ -1,4 +1,4 @@
-package com.example.pam_app.foodAndDrinks
+package com.example.pam_app.foodAndDrinks.utils
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -8,7 +8,7 @@ import androidx.annotation.NonNull
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pam_app.databinding.ListItemGridFoodBinding
 
-internal class FoodAdapter(private var foodList: List<FoodModel>) :
+internal class FoodAdapter(private var foodList: List<Food>) :
     RecyclerView.Adapter<FoodAdapter.MyViewHolder>() {
 
     internal inner class MyViewHolder(binding: ListItemGridFoodBinding) :
