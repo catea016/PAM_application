@@ -1,24 +1,23 @@
-## Laboratory work Nr. 3
+## Laboratory work Nr. 4
 # Laboratory Task:
 For this laboratory work we had to:
-* Pick an API it could be public or private in case you have access to it. You could use your own 
-API or TCP server (in case you a building chat). In case if you use Firebase or another serverless service, 
-please add integration to Firebase but also implement connection to another API by performing standard HTTP requests.
-* Implement at least 2 GET and 2 POST requests. At least 1 of your request should send data to API 
-by request body in JSON format, but not by URL queries.
-* On Android you have to use Retrofit(https://square.github.io/retrofit/) and kotlin coroutines on 
-iOS you have to use Alamofire(https://github.com/Alamofire/Alamofire) and RxSwift(https://github.com/ReactiveX/RxSwift) 
-* Add 2 more screens with implemented design, your app should have at least 5 screen, not just layout, 
-but with implemented design.
-* Add basic navigation component for in app navigation drawer menu(swipeable menu from left to right), 
-or tab bar navigation(bottom bar with tabs) 
+* Perform a research on several mobile app architectures, they are almost the same for both platforms. 
+Most popular architecture are MVC, MVP, MVVM, RIBs https://github.com/uber/RIBs , VIPER mostly for 
+iOS, Hexagonal architecture https://en.wikipedia.org/wiki/Hexagonal_architecture_(software) 
+* Pick up an architecture which fits the best your project and refactor your code base to selected 
+architecture. Your codebase should be refactored to follow idiomatic representation of selected architecture. 
+You should follow principles of "Clean Architectures" 
+https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html and 
+"Clean code" https://www.investigatii.md/uploads/resurse/Clean_Code.pdf and please 
+refactor your code to look clean and structured. Messy projects will not be evaluated.
+
 # What I did:
-1. So, I selected an API corresponding to my application, and mainly the one for implementing another category of products 
-2. Using kotlin coroutines and retrofit I created 2 GET and 2 POST requests
-3. Finally I added an navigation component, an drawer menu 
+1. So, for my project I selected  the MVP(Model View Presenter) architecture 
+2. I changed the code to correspond to the pattern, and mainly the part responsible for api request, and presenting data in the recycler view, 
+in such a way to have a model, an presenter and a view. For the view I created, also, an interface. 
+3. Finally I structured the files into the packages.
 
-I obtained the following result:
+I obtained the following structure of the project:
 
-![alt text](../app/images/drawer_menu.png)
-![alt text](../app/images/blush.png)
-![alt text](../app/images/lipstick.png)
+![alt text](../app/images/project.png)
+
