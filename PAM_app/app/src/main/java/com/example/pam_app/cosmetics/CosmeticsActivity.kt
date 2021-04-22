@@ -9,15 +9,19 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.pam_app.R
+import com.example.pam_app.databinding.ActivityCosmeticsBinding
 
 class CosmeticsActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityCosmeticsBinding
     lateinit var recyclerView: RecyclerView
     private lateinit var viewModel: MainViewModel
     private val adapter by lazy { MainAdapter() }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cosmetics)
+        binding = ActivityCosmeticsBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
         setupRecyclerview()
 
