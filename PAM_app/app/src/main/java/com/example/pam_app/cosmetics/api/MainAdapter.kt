@@ -13,8 +13,10 @@ class MainAdapter : RecyclerView.Adapter<MainAdapter.MyViewHolder>() {
 
     private var myList = emptyList<Cosmetics>()
 
+
     inner class MyViewHolder(binding: CosmeticsItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
+
         val image: ImageView = binding.itemPhoto
         val cosmeticName: TextView = binding.itemTitle
         val cosmeticPrice: TextView = binding.itemPrice
