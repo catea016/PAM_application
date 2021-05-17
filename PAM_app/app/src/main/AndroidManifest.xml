@@ -21,7 +21,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".CategoryActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".login.LoginActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

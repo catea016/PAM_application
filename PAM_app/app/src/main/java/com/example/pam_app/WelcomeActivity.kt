@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.example.pam_app.databinding.ActivityWelcomeBinding
+import com.example.pam_app.login.LoginActivity
 import java.util.*
 
 class WelcomeActivity : AppCompatActivity() {
